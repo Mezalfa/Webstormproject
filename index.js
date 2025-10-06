@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000; // You can pick any available port
+const port = process.env.PORT || 8080; // You can pick any available port
 
 app.get('/', (req, res) => {
     res.send('Hello World from Express!');
